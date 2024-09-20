@@ -100,7 +100,7 @@ h1 {
 }
 
 .item:nth-child(odd){
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(200, 245, 245);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -108,7 +108,7 @@ h1 {
     max-height: 120px;
 }
 .item:nth-child(even){
-    background-color: rgb(200, 245, 245);
+    background-color: rgb(220,220,220);
     display: flex;
     flex-direction: row;
     align-items: flex-start;

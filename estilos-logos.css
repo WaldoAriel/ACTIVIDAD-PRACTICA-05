@@ -35,11 +35,11 @@ h1 {
     z-index: 1;
     margin-bottom: 6px;
 }
-.nav-bar > img {
+.nav-bar > a img {
     border: solid 4px rgb(15, 100, 150);
     border-radius: 35px;
 }
-.nav-bar > img:hover {
+.nav-bar > a img:hover {
     box-shadow: 0 0 8px 4px #4ac9ff99;
     width: 67px;
 }

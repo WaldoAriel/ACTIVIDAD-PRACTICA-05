@@ -85,7 +85,8 @@ h1 {
 .pie {
     grid-area: pie;
     background-color: rgb(15, 100, 150);
-    color: white;    
+    color: white;
+    padding-top: 16px;
 }
 
 .contenedor-gral {  
@@ -147,7 +148,6 @@ h1 {
     .item img {
         display: block;
         max-height: 130px;
-/*         width: 260px; */
         object-fit: cover;
     }
 }
@@ -158,8 +158,14 @@ h1 {
         overflow: hidden;
     }
 
+    
+
     .parrafo-oculto {
         display: inline;
+    }
+
+    .sobre-mi {
+        font-size: 0.9rem;
     }
     
     .contenedor-gral {

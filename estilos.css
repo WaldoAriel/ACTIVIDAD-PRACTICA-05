@@ -81,12 +81,22 @@ h1 {
 .descripcion > h3 {
     display: none;
 }
+.contacto {
+    background-color: #999;
+    padding: 4px;
+}
+.contacto img {
+    filter:drop-shadow (2px 3px 8px 4px rgba(50, 50, 50, 0.7))
+}
 
 .pie {
     grid-area: pie;
     background-color: rgb(15, 100, 150);
     color: white;
-    padding-top: 16px;
+}
+
+.pie p {
+    padding: 12px;
 }
 
 .contenedor-gral {  
@@ -96,7 +106,7 @@ h1 {
         "nav-bar"       20px
         "sobre-mi"      auto
         "contenido"     auto
-        "pie"           60px;
+        "pie"           auto;
 }
 
 .item:nth-child(odd){
@@ -141,7 +151,7 @@ h1 {
         "encabezado     sobre-mi"   180px
         "nav-bar        sobre-mi"   25px
         "contenido      sobre-mi"   auto
-        "pie            pie"        50px / 
+        "pie            pie"        auto / 
         500px           auto;
     }
 
@@ -173,7 +183,7 @@ h1 {
         "encabezado     encabezado"   180px
         "nav-bar        nav-bar"   25px
         "contenido      sobre-mi"   auto
-        "pie            pie"        50px / 
+        "pie            pie"        auto / 
         700px           auto;
     }
 

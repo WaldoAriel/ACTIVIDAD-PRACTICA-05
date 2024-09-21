@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1.06rem;   
+    min-height: 100%;    
+}
+
+h1 {
+    display: none;
+}
+.encabezado {
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 24px;
+    background-color: rgb(15, 100, 150);
+    color: white;
+}
+.nav-bar {
+    grid-area: nav-bar;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    margin-bottom: 6px;
+}
+.nav-bar > img {
+    border: solid 4px rgb(15, 100, 150);
+    border-radius: 35px;
+}
+.nav-bar > img:hover {
+    box-shadow: 0 0 8px 4px #4ac9ff99;
+    width: 67px;
+}
+    
+.contenedor-gral {  
+    display: grid;
+    grid-template:
+        "encabezado"    180px
+        "nav-bar"       20px
+        "sobre-mi"      auto
+        "contenido"     auto
+        "pie"           60px;
+}
+
+.contenido {
+    grid-area: "contenido";
+    justify-content: center;
+    display: grid;
+    gap: 12px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 16px;
+    text-align: justify;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px 3px rgba(100, 100, 100, 0.5);
+}
+.logo img {
+    margin-top: 12px;
+}
+
+.pie {
+    grid-area: pie;
+    background-color: rgb(15, 100, 150);
+    color: white; 
+    text-align: center;   
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .descripcion {
+        font-size: 0.9rem !important;
+    }
+    
+    .contenedor-gral {
+        justify-content: center;
+        grid-template:
+        "encabezado"    180px
+        "nav-bar"       25px
+        "contenido"     auto
+        "pie"           50px/
+        100%;
+
+    }
+    .contenido {
+        grid-template:
+        "contenido contenido" auto
+        "contenido contenido" auto;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .descripcion {
+        font-size: 0.9rem !important;
+    }
+    
+    .contenedor-gral {
+        justify-content: center;
+        grid-template:
+        "encabezado"    180px
+        "nav-bar"       25px
+        "contenido"     auto
+        "pie"           50px/
+        100%;
+    }
+    .contenido {
+        grid-template:
+        "contenido contenido contenido contenido" auto;
+    }
+    
+}
